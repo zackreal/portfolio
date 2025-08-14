@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
           
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,8 +25,10 @@
             
             <div class="nav-menu">
                 <ul class="nav-links">
-                    <li><a href="#keahlian">Keahlian</a></li> <li><a href="#services">Project</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#keahlian">Keahlian</a></li>
+                    <li><a href="#sertifikat">Sertifikasi</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Kontak</a></li>
                 </ul>
     
                 <div class="nav-right">
@@ -42,7 +46,7 @@
 
     <section id="hero">
         <div class="hero-container container">
-            <div class="hero-text">
+            <div class="hero-text" data-aos="fade-right">
                 <p class="hero-greeting">Hello, I'm</p>
                 <h1>Zacky Farel Muhammad</h1>
                 <p class="hero-specialization">Enterprise System Analyst</p>
@@ -50,24 +54,22 @@
                     <p>Mahasiswa Sistem Informasi yang antusias dalam membangun jembatan antara proses bisnis, pengalaman pengguna (UI/UX), dan analisis data. Saya memadukan keahlian dalam <strong>Enterprise System (ERP/SCM)</strong> dengan fondasi kuat di <strong>Desain UI/UX</strong> untuk menciptakan solusi teknologi yang tidak hanya efisien, tetapi juga intuitif dan berbasis data.</p>
                 </div>
                 <div class="hero-cta">
-                    <a href="#" class="btn btn-primary"><i class='bx bxs-download'></i> Download CV</a>
-                    <a href="#services" class="btn btn-secondary">Lihat Project</a>
+                    <a href="docs/CV ATS Zacky Farel M (MAIN).pdf" class="btn btn-primary"><i class='bx bxs-download'></i> Download CV</a>
+                    <a href="#projects" class="btn btn-secondary">Lihat Project</a>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" data-aos="fade-left">
                 <img src="images/fotoprofil.png" alt="Foto Profesional Zacky Farel Muhammad">
             </div>
         </div>
     </section>
 
-    <section id="keahlian">
+    <section id="keahlian" data-aos="fade-up">
         <div class="container">
             <h2 class="section-title">Pendidikan & Keahlian</h2>
             <div class="skills-container">
                 <div class="education-box">
-                    <div class="education-icon">
-                        <i class='bx bxs-graduation'></i>
-                    </div>
+                    <div class="education-icon"><i class='bx bxs-graduation'></i></div>
                     <div class="education-details">
                         <h3>Universitas Pembangunan Nasional "Veteran" Jakarta</h3>
                         <h4>S1 Sistem Informasi</h4>
@@ -80,62 +82,159 @@
                         <div class="tool-item"><i class="devicon-figma-plain"></i><p>Figma</p></div>
                         <div class="tool-item"><i class="devicon-python-plain"></i><p>Python</p></div>
                         <div class="tool-item"><i class="devicon-canva-original"></i><p>Canva</p></div>
-                        <div class="tool-item"><strong>SPSS</strong><p>SPSS</p></div> <div class="tool-item"><i class="devicon-java-plain"></i><p>Java</p></div>
-                        <div class="tool-item"><i class='bx bxs-file-doc'></i><p>MS Word</p></div>
+                        <div class="tool-item"><strong>SPSS</strong><p>SPSS</p></div>
+                        <div class="tool-item"><i class="devicon-java-plain"></i><p>Java</p></div>
+                        <div class="tool-item"><i class="devicon-github-original"></i><p>GitHub</p></div>
                         <div class="tool-item"><i class="devicon-mysql-plain"></i><p>MySQL</p></div>
-                        <div class="tool-item"><strong>Odoo</strong><p>Odoo</p></div> </div>
+                        <div class="tool-item"><strong>Odoo</strong><p>Odoo</p></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section id="services">
+    <section id="sertifikat" data-aos="fade-up">
         <div class="container">
-            <p class="section-subtitle">Area Kompetensi Utama</p>
-            <h2 class="section-title">Demonstrasi Keahlian Melalui Ragam Proyek</h2>
+            <h2 class="section-title">Sertifikasi & Pencapaian</h2>
+            <div class="sertifikat-container">
+                <div class="sertifikat-grid">
+                    <div class="sertifikat-card">
+                        <div class="sertifikat-icon"><i class='bx bxs-certification'></i></div>
+                        <div class="sertifikat-details">
+                            <h4>Skill Specialization: Data Analysis</h4>
+                            <p class="sertifikat-issuer">Diterbitkan oleh: MySkill</p>
+                            <p class="sertifikat-date">Tanggal: Juli 2025</p>
+                            <a href="#" class="sertifikat-link" data-image="images/sertifikat-data-analysis.jpg">Lihat Kredensial</a>
+                        </div>
+                    </div>
+                    <div class="sertifikat-card">
+                        <div class="sertifikat-icon"><i class='bx bxs-certification'></i></div>
+                        <div class="sertifikat-details">
+                            <h4>Skill Specialization: Python Fundamental</h4>
+                            <p class="sertifikat-issuer">Diterbitkan oleh: MySkill</p>
+                            <p class="sertifikat-date">Tanggal: Juli 2025</p>
+                            <a href="#" class="sertifikat-link" data-image="images/sertifikat-python.jpg">Lihat Kredensial</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sertifikat-preview">
+                    <img id="sertifikat-image-preview" src="" alt="Tampilan Sertifikat">
+                    <p id="sertifikat-placeholder">Klik "Lihat Kredensial" pada salah satu sertifikat untuk menampilkannya di sini.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+        <div class="container">
+            <p class="section-subtitle">Portofolio</p>
+            <h2 class="section-title">Kumpulan Proyek & Studi Kasus</h2>
             <div class="swiper services-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="ui-ux-projects.html" class="service-card-link">
-                            <div class="service-card">
-                                <div class="service-image">
-                                    <img class="icon-light" src="images/uiux1terang.png" alt="Ikon UI/UX Project"><img class="icon-dark" src="images/uiux1gelap.png" alt="Ikon UI/UX Project">
-                                </div>
-                                <h3>UI/UX Projects</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="data-analysis-projects.html" class="service-card-link">
-                            <div class="service-card">
-                                <div class="service-image">
-                                    <img class="icon-light" src="images/dataanalisis1terang.png" alt="Ikon Analisis Data"><img class="icon-dark" src="images/dataanalisis1gelap.png" alt="Ikon Analisis Data">
-                                </div>
-                                <h3>Data Analysis</h3>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="service-card">
-                            <div class="service-image">
-                                <img src="images/erp1.png" alt="Ikon Implementasi ERP">
-                            </div>
-                            <h3>ERP Implementation</h3>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="service-card">
-                            <div class="service-image">
-                                <img src="https://via.placeholder.com/200x150/111827/22d3ee?text=BI" alt="Ikon Business Intelligence">
-                            </div>
-                            <h3>Business Intelligence</h3>
-                        </div>
-                    </div>
+                    <div class="swiper-slide"><a href="#project-ragunan" class="service-card-link"><div class="service-card"><div class="service-image project-thumb"><img src="images/coverragunan.png" alt="Thumbnail Proyek Ragunan"></div><h3>Redesign Aplikasi Ragunan</h3></div></a></div>
+                    <div class="swiper-slide"><a href="#project-indofood" class="service-card-link"><div class="service-card"><div class="service-image project-thumb"><img src="images/indofood-thumbnail.jpg" alt="Thumbnail Proyek Indofood"></div><h3>Analisis SCM & ERP Indofood</h3></div></a></div>
+                    <div class="swiper-slide"><a href="#project-bi" class="service-card-link"><div class="service-card"><div class="service-image project-thumb"><img src="images/bi-thumbnail.png" alt="Thumbnail Proyek BI"></div><h3>Dashboard Business Intelligence</h3></div></a></div>
+                    
+                    <div class="swiper-slide"><a href="#project-ragunan" class="service-card-link"><div class="service-card"><div class="service-image project-thumb"><img src="images/coverragunan.png" alt="Thumbnail Proyek Ragunan"></div><h3>Redesign Aplikasi Ragunan</h3></div></a></div>
+                    <div class="swiper-slide"><a href="#project-indofood" class="service-card-link"><div class="service-card"><div class="service-image project-thumb"><img src="images/indofood-thumbnail.jpg" alt="Thumbnail Proyek Indofood"></div><h3>Analisis SCM & ERP Indofood</h3></div></a></div>
+                    <div class="swiper-slide"><a href="#project-bi" class="service-card-link"><div class="service-card"><div class="service-image project-thumb"><img src="images/bi-thumbnail.png" alt="Thumbnail Proyek BI"></div><h3>Dashboard Business Intelligence</h3></div></a></div>
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-ragunan" class="project-detail-section" data-aos="fade-up">
+        <div class="container">
+            <div class="case-study-content">
+                <h1 class="project-page-title">Studi Kasus: Redesign Aplikasi Pelayanan Taman Margasatwa Ragunan</h1>
+                <div class="project-overview-grid">
+                    <div class="overview-item"><h4>PERAN SAYA</h4><p>HEAD OF UI/UX Researcher & Designer</p></div>
+                    <div class="overview-item"><h4>TIM</h4><p>Project Based Learning (PjBL)</p></div>
+                    <div class="overview-item"><h4>TOOLS</h4><p>Figma, Miro, Google Forms</p></div>
+                    <div class="overview-item"><h4>PROYEK</h4><p>Penelitian Mata Kuliah</p></div>
+                </div>
+                <div class="project-section">
+                    <h2>Proses Desain & Penelitian</h2>
+                    <p>Kami menggunakan metode riset kualitatif untuk memahami pengguna. Data dikumpulkan melalui wawancara, observasi, dan analisis ulasan aplikasi, lalu diolah dengan <i>Affinity Mapping</i> untuk mengidentifikasi *pain points*.</p>
+                    <div class="project-image-gallery">
+                        <img src="images/bannerragunan.png" alt="Mockup Desain Aplikasi Ragunan">
+                    </div>
+                    <h4>Wawasan Kunci dari Pengguna:</h4>
+                    <div class="insights-grid">
+                        <div class="insight-card"><div class="insight-icon"><i class='bx bx-palette'></i></div><div class="insight-text"><h5>Desain Kurang Modern</h5><p>Pengguna menyarankan agar tampilan aplikasi diperbarui dan disederhanakan.</p></div></div>
+                        <div class="insight-card"><div class="insight-icon"><i class='bx bx-credit-card'></i></div><div class="insight-text"><h5>Pembayaran Terbatas</h5><p>Keluhan utama adalah pembayaran yang hanya menerima Bank DKI.</p></div></div>
+                        <div class="insight-card"><div class="insight-icon"><i class='bx bx-map-alt'></i></div><div class="insight-text"><h5>Navigasi Sulit</h5><p>Pengguna membutuhkan fitur peta yang lebih detail dan interaktif.</p></div></div>
+                        <div class="insight-card"><div class="insight-icon"><i class='bx bx-group'></i></div><div class="insight-text"><h5>Info Keramaian</h5><p>Diperlukan fitur info jumlah pengunjung di area tertentu.</p></div></div>
+                    </div>
+                </div>
+                <div class="project-section">
+                    <h2>Publikasi & Hasil Penelitian</h2>
+                    <p>Seluruh proses dan analisis mendalam telah kami dokumentasikan secara lengkap dalam sebuah artikel penelitian ilmiah.</p>
+                    <div class="article-link-wrapper">
+                         <a href="docs/ARTIKELPJBL1.pdf" target="_blank" class="btn btn-primary"><i class='bx bxs-file-pdf'></i> Baca Artikel Lengkap (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-indofood" class="project-detail-section" data-aos="fade-up">
+        <div class="container">
+             <div class="case-study-content">
+                <h1 class="project-page-title">Studi Kasus: Analisis Strategi SCM & ERP di PT Indofood Tbk</h1>
+                <div class="project-overview-grid">
+                     <div class="overview-item"><h4>PERAN SAYA</h4><p>Analis Proses & Penyusun Laporan</p></div>
+                     <div class="overview-item"><h4>TIM</h4><p>Proyek Ujian Akhir Semester</p></div>
+                     <div class="overview-item"><h4>OBJEK STUDI</h4><p>PT Indofood Sukses Makmur Tbk</p></div>
+                     <div class="overview-item"><h4>FOKUS</h4><p>Supply Chain Management & ERP</p></div>
+                </div>
+                <div class="project-section">
+                    <h2>Analisis & Rekomendasi Strategi</h2>
+                    <p>Analisis kami mengidentifikasi empat masalah utama: ketidaksesuaian persediaan dengan permintaan, kendala geografis, biaya logistik tinggi, dan ketergantungan pada pemasok tertentu. Berdasarkan temuan ini, kami merancang beberapa rekomendasi strategi, termasuk:</p>
+                    <ul class="pain-points-list">
+                        <li><strong>Manajemen Persediaan:</strong> Implementasi metode Just-in-Time (JIT) dan pengelolaan stok berbasis data melalui optimisasi sistem ERP.</li>
+                        <li><strong>Kolaborasi Digital:</strong> Peningkatan kolaborasi dengan pemasok dan distributor melalui platform digital terintegrasi.</li>
+                    </ul>
+                </div>
+                <div class="project-section">
+                    <h2>Visualisasi Proses & Roadmap</h2>
+                    <p>Untuk memvisualisasikan alur kerja dan rencana implementasi, kami mengembangkan sebuah Rich Picture Diagram dan Roadmap yang terperinci.</p>
+                    <div class="project-image-gallery two-columns">
+                        <img src="images/indofood-rich-picture.png" alt="Rich Picture Diagram SCM Indofood">
+                        <img src="images/indofood-roadmap.png" alt="Roadmap Implementasi SCM">
+                    </div>
+                </div>
+                 <div class="project-section">
+                    <h2>Laporan Penelitian Lengkap</h2>
+                    <p>Seluruh analisis, perancangan strategi, roadmap, hingga mitigasi risiko untuk proyek ini telah didokumentasikan secara lengkap dalam laporan penelitian di bawah ini.</p>
+                    <div class="article-link-wrapper">
+                         <a href="docs/laporan-scm-indofood.pdf" target="_blank" class="btn btn-primary"><i class='bx bxs-file-pdf'></i> Baca Laporan Lengkap (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" data-aos="fade-up">
+        <div class="container">
+            <p class="section-subtitle">Get in Touch</p>
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <i class='bx bx-envelope'></i>
+                    <h3>Email</h3>
+                    <p>farelzacky2@gmail.com</p>
+                    <a href="mailto:farelzacky2@gmail.com" class="contact-link">Kirim Email</a>
+                </div>
+                <div class="contact-card">
+                    <i class='bx bxl-whatsapp'></i>
+                    <h3>WhatsApp</h3>
+                    <p>0812-8545-9889</p>
+                    <a href="https://wa.me/6281285459889" target="_blank" class="contact-link">Kirim Pesan</a>
+                </div>
             </div>
         </div>
     </section>
@@ -147,6 +246,7 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="script.js" defer></script>
 
 </body>
