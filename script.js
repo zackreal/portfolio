@@ -62,4 +62,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // KODE UNTUK MENGAKTIFKAN AOS
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+
+    // KODE UNTUK PREVIEW SERTIFIKAT
+    const sertifikatLinks = document.querySelectorAll('.sertifikat-link');
+    const sertifikatImagePreview = document.getElementById('sertifikat-image-preview');
+    const sertifikatPlaceholder = document.getElementById('sertifikat-placeholder');
+    const sertifikatCards = document.querySelectorAll('.sertifikat-card');
+
+    if (sertifikatLinks.length > 0 && sertifikatImagePreview) {
+        // Tampilkan gambar pertama secara default saat halaman dimuat
+        const firstImage = sertifikatLinks[0].getAttribute('data-image');
+        sertifikatImagePreview.src = firstImage;
+        sertifikatImagePreview.classList.add('active');
+        sertifikatPlaceholder.style.display = 'none';
+        sertifikatCards[0].classList.add('active');
+
+        sertifikatLinks.forEach((link, index) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); 
+
+                sertifikatCards.forEach(card => card.classList.remove('active'));
+
+                link.closest('.sertifikat-card').classList.add('active');
+                
+                const imagePath = link.getAttribute('data-image');
+                sertifikatImagePreview.src = imagePath;
+
+                sertifikatImagePreview.classList.add('active');
+                if(sertifikatPlaceholder) sertifikatPlaceholder.style.display = 'none';
+            });
+        });
+    }
+
 });
